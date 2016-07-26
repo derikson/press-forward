@@ -54,7 +54,9 @@ module.exports = {
         test: /\.js$/,
         include: srcPath,
         loader: 'babel',
-        query: require('./babel.dev')
+        query: {
+          cacheDirectory: true
+        }
       },
       {
         test: /\.css$/,

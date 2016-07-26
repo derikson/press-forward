@@ -49,8 +49,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: srcPath,
-        loader: 'babel',
-        query: require('./babel.prod')
+        loader: 'babel'
       },
       {
         test: /\.css$/,
