@@ -1,0 +1,9 @@
+#list-header {
+  margin: 1em 0;
+}
+
+h2 {
+  display: inline;
+  margin: 0 1em 0 0;
+  vertical-align: middle;
+}

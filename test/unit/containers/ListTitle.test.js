@@ -25,4 +25,12 @@ describe('ListTitle', () => {
     const wrapper = mount(<Provider store={store}><ListTitle /></Provider>);
     expect(wrapper.find('h2').text()).to.equal('Sorcha1 list');
   });
+
+  it('should display an input when editing', () => {
+    const store = mockStore(Map({ name: 'Sorcha1 list', editDetails: true }));
+    const wrapper = mount(<Provider store={store}><ListTitle /></Provider>);
+    expect(
+      wrapper.find('#list-header input[defaultValue="Sorcha1 list"]')
+    ).to.have.length(1);
+  });
 });
