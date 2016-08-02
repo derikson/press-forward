@@ -1,12 +1,12 @@
-import { Map } from 'immutable';
+import { Record } from 'immutable';
 
 export const SET_LIST_NAME    = 'press-forward/SET_LIST_NAME';
 export const SET_EDIT_DETAILS = 'press-forward/SET_EDIT_DETAILS';
 
-const init = Map({
+const init = Record({
   name: null,
   editDetails: false
-});
+})();
 
 export default function list(state = init, action = {}) {
   switch (action.type) {

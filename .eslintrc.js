@@ -57,7 +57,7 @@ module.exports = {
     'dot-location': [WARNING, 'property'],
     eqeqeq: [WARNING, 'allow-null'],
     'guard-for-in': WARNING,
-    'new-cap': [WARNING, { newIsCap: true, capIsNewExceptions: ['Map', 'List'] }],
+    'new-cap': [WARNING, { newIsCap: true, capIsNewExceptions: ['Map', 'List', 'Record'] }],
     'new-parens': WARNING,
     'no-array-constructor': WARNING,
     'no-caller': WARNING,
