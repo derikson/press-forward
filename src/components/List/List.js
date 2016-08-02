@@ -1,3 +1,5 @@
+/* @flow */
+
 import React from 'react';
 import ListTitle from '../../containers/ListTitle/ListTitle';
 

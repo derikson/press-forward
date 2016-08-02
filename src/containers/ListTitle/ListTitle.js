@@ -1,3 +1,5 @@
+/* @flow */
+
 import React from 'react';
 import { connect } from 'react-redux';
 import {
@@ -42,8 +44,11 @@ export default connect(
     },
     onSubmit: e => {
       e.preventDefault();
-      dispatch(setListName(document.getElementById('list-name').value));
-      dispatch(setEditDetails(false));
+      const ele = document.getElementById('list-name');
+      if (ele instanceof HTMLInputElement) {
+        dispatch(setListName(ele.value));
+        dispatch(setEditDetails(false));
+      }
     }
   })
 )(ListTitle);
